@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		145D4E2C223AE15400E3FEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D4E2B223AE15400E3FEFD /* AppDelegate.swift */; };
-		145D4E2E223AE15400E3FEFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D4E2D223AE15400E3FEFD /* ViewController.swift */; };
-		145D4E31223AE15400E3FEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145D4E2F223AE15400E3FEFD /* Main.storyboard */; };
 		145D4E33223AE15700E3FEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145D4E32223AE15700E3FEFD /* Assets.xcassets */; };
 		145D4E36223AE15700E3FEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145D4E34223AE15700E3FEFD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -17,8 +15,6 @@
 /* Begin PBXFileReference section */
 		145D4E28223AE15400E3FEFD /* Swift.map Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift.map Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		145D4E2B223AE15400E3FEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		145D4E2D223AE15400E3FEFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		145D4E30223AE15400E3FEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		145D4E32223AE15700E3FEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		145D4E35223AE15700E3FEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		145D4E37223AE15700E3FEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,13 +51,19 @@
 			isa = PBXGroup;
 			children = (
 				145D4E2B223AE15400E3FEFD /* AppDelegate.swift */,
-				145D4E2D223AE15400E3FEFD /* ViewController.swift */,
-				145D4E2F223AE15400E3FEFD /* Main.storyboard */,
+				145D4E3D223AE2B400E3FEFD /* Resources */,
+			);
+			path = "Swift.map Demo";
+			sourceTree = "<group>";
+		};
+		145D4E3D223AE2B400E3FEFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				145D4E32223AE15700E3FEFD /* Assets.xcassets */,
 				145D4E34223AE15700E3FEFD /* LaunchScreen.storyboard */,
 				145D4E37223AE15700E3FEFD /* Info.plist */,
 			);
-			path = "Swift.map Demo";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +126,6 @@
 			files = (
 				145D4E36223AE15700E3FEFD /* LaunchScreen.storyboard in Resources */,
 				145D4E33223AE15700E3FEFD /* Assets.xcassets in Resources */,
-				145D4E31223AE15400E3FEFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145D4E2E223AE15400E3FEFD /* ViewController.swift in Sources */,
 				145D4E2C223AE15400E3FEFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		145D4E2F223AE15400E3FEFD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				145D4E30223AE15400E3FEFD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		145D4E34223AE15700E3FEFD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mm.Swift-map-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mm.Swift-map-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
