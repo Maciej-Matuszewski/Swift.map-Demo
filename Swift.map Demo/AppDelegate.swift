@@ -1,10 +1,5 @@
-//
-//  AppDelegate.swift
 //  Swift.map Demo
-//
-//  Created by Maciej Matuszewski on 14/03/2019.
-//  Copyright © 2019 Maciej Matuszewski. All rights reserved.
-//
+//  Created by Maciej Matuszewski.
 
 import UIKit
 
@@ -12,11 +7,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let apiClient = APIClient()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        let viewController = FeedViewController(apiClient: apiClient)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = UIViewController()
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
         
