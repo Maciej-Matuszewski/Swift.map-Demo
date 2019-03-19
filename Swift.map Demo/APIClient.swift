@@ -10,12 +10,12 @@ protocol APIRequest {
 }
 
 extension APIRequest {
+    
     var url: URL {
         return URL(string: "https://api.unsplash.com/")!
     }
     
     var urlRequest: URLRequest? {
-        
         guard var components = URLComponents(url: url.appendingPathComponent(path), resolvingAgainstBaseURL: false) else { return nil }
         
         components.queryItems = parameters.map {

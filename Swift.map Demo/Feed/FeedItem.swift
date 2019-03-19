@@ -3,7 +3,7 @@
 
 import Foundation
 
-struct FeedItem: Codable {
+class FeedItem: Codable {
     
     private struct Urls: Codable {
         let raw: String
@@ -27,3 +27,9 @@ extension FeedItem: Equatable {
         return lhs.id == rhs.id
     }
 }
+
+//extension FeedItem: CustomDebugStringConvertible {
+//    var debugDescription: String {
+//        return "Feed item with id:\(id) and image url: \(imageURL)"
+//    }
+//}

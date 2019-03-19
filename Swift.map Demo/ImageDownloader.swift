@@ -5,6 +5,7 @@ import Foundation
 import UIKit
 
 class ImageDownloader {
+    
     private var cache = NSCache<AnyObject, AnyObject>()
     
     func image(from urlString: String, completion:@escaping (_ image: UIImage?) -> ()) {
