@@ -35,6 +35,7 @@ class FeedViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.dataSource = self
+        tableView.delegate = nil
         tableView.register(FeedItemTableViewCell.self, forCellReuseIdentifier: CellReuseIdentifier.imageCell.rawValue)
         tableView.refreshControl = refreshControl
         tableView.separatorColor = .clear
