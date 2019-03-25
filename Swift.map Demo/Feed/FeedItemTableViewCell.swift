@@ -63,7 +63,7 @@ final class FeedItemTableViewCell: UITableViewCell {
     
     private func layoutComponents() {
         NSLayoutConstraint.activate([
-            heightAnchor.constraint(equalToConstant: 300),
+            heightAnchor.constraint(equalToConstant: 160),
             
             photoView.topAnchor.constraint(equalTo: topAnchor),
             photoView.leadingAnchor.constraint(equalTo: leadingAnchor),
