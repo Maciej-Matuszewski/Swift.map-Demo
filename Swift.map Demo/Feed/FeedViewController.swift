@@ -162,6 +162,11 @@ private extension FeedViewController {
         }
         deletes = deletes.compactMap { if reloads.contains($0) { return nil } else { return $0 } }
         
+        guard (newItems.count - oldItems.count) == (inserts.count - deletes.count) else {
+            tableView.reloadData()
+            return
+        }
+        
         UIView.performWithoutAnimation {
             tableView.beginUpdates()
             tableView.deleteRows(at: deletes.map({ return IndexPath(row: $0, section: sectionIndex) }), with: .none)
